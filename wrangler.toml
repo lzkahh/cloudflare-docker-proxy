@@ -1,8 +1,16 @@
 name = "cloudflare-docker-proxy"
 compatibility_date = "2023-12-01"
 
-# 全局变量，适用于所有环境
 [vars]
 CUSTOM_DOMAIN = "lzkahh.com"
 MODE = "production"
 TARGET_UPSTREAM = "https://registry-1.docker.io"
+ routes = [
+   { pattern = "docker.lzkahh.com", custom_domain = true },
+   { pattern = "quay.lzkahh.com", custom_domain = true },
+   { pattern = "gcr.lzkahh.com", custom_domain = true },
+   { pattern = "k8s-gcr.lzkahh.com", custom_domain = true },
+   { pattern = "k8s.lzkahh.com", custom_domain = true },
+   { pattern = "ghcr.lzkahh.com", custom_domain = true },
+   { pattern = "cloudsmith.lzkahh.com", custom_domain = true },
+ ]
