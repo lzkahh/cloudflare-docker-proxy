@@ -4,8 +4,8 @@ compatibility_date = "2023-12-01"
 [vars]
 CUSTOM_DOMAIN = "lzkahh.com"
 MODE = "production"
-TARGET_UPSTREAM = "https://registry-1.docker.io"
- routes = [
+TARGET_UPSTREAM = ""
+routes = [
    { pattern = "docker.lzkahh.com", custom_domain = true },
    { pattern = "quay.lzkahh.com", custom_domain = true },
    { pattern = "gcr.lzkahh.com", custom_domain = true },
