@@ -1,10 +1,6 @@
 name = "cloudflare-docker-proxy"
 compatibility_date = "2023-12-01"
 
-[vars]
-CUSTOM_DOMAIN = "lzkahh.com"
-MODE = "production"
-TARGET_UPSTREAM = ""
 routes = [
    { pattern = "docker.lzkahh.com", custom_domain = true },
    { pattern = "quay.lzkahh.com", custom_domain = true },
@@ -14,3 +10,7 @@ routes = [
    { pattern = "ghcr.lzkahh.com", custom_domain = true },
    { pattern = "cloudsmith.lzkahh.com", custom_domain = true },
  ]
+[vars]
+CUSTOM_DOMAIN = "lzkahh.com"
+MODE = "production"
+TARGET_UPSTREAM = ""
